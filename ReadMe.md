@@ -97,3 +97,43 @@ For CLI tools to be installed by pip, add to `pyproject.toml`
 [project.scripts]
 myclitool = "package.source:function"
 ```
+
+# 6th step
+Add a protection of the main branch on GitHub requiring all the checks contained in the ci.yml workflow to pass to allow a merge.
+
+```
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install project + dev dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .[dev]
+
+    - name: Lint with Ruff
+      run: ruff check src/ tests/
+
+    - name: Type check with mypy
+      run: mypy src/
+
+    - name: Run tests with pytest
+      run: pytest
+```
