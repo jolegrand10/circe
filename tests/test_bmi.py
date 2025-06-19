@@ -1,4 +1,4 @@
-from bmi import calculate_bmi, bmi_category
+from bmi.bmi import calculate_bmi, bmi_category
 
 EPSILON = 0.01
 
