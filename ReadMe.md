@@ -48,30 +48,30 @@ ignore_missing_imports = true
 
 ```
 The template mentions 
-- pytest for testing
-- ruff for linting 
-- mypy for type checking.
+- `pytest` for testing
+- `ruff` for linting 
+- `mypy` for type checking.
 
 # 3rd step
 Initiate a virtual environment for Python.
 
-``python3 -m venv .venv``
+`python3 -m venv .venv`
 
-Then, activate it (using the dialect of your OS)
+Then, activate it (adapt the dialect to your OS)
 
-``source .venv/bin/activate``
+`source .venv/bin/activate`
 
 # 4th step
 Populate code. Then only, run:
 
-``pip install -e .[dev]``
+`pip install -e .[dev]`
 
 This installs the dependencies needed for development.
 
 # 5th step
 ## Populate tests.
 
-Pytest requires to use names such as `test_mymodule.py`, import the items to be tested, use simple `assert`s.
+`Pytest` requires to use names such as `test_mymodule.py`, import the items to be tested, use simple `assert`s.
 
 To run tests, simply type from the command line:
 
