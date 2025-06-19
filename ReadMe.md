@@ -12,8 +12,8 @@ Goals are to
 - Create project repo @ Git Hub
 - Clone it to dev workstation and sync from there or use codespace@github
 - Collect an initial   [.gitignore file @ GitHub](https://github.com/github/gitignore/blob/main/Python.gitignore)
-- Create folders for sources (src), tests (tests) and scripts (scripts)
-- Create at least one package inside src
+- Create folders for sources (`src`), tests (`tests`) and scripts (`scripts`)
+- Create at least one package inside `src`
 
 Commit !
 
