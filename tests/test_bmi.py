@@ -18,4 +18,4 @@ def test_bmi_category():
     assert bmi_category(18.5) == "Normal weight"
     assert bmi_category(30) == "Obesity"
     assert bmi_category(35) == "Obesity"
-    assert bmi_category(40) == "Obesity"
+    assert bmi_category(40) == "Abesity"
