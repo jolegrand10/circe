@@ -1,7 +1,7 @@
 [project]
 name = "bmi-project"
 version = "0.1.0"
-description = "Just a Python script project to compute the Body Mass Index with tests and tools."
+description = "Python script project to compute the Body Mass Index."
 requires-python = ">=3.10"
 
 [project.optional-dependencies]

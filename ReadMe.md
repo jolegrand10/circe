@@ -18,7 +18,7 @@ Goals are to
 Commit !
 
 ## 2nd step. Set-up project metadata
-At the root of the project, create a `pyproject.toml` file, to gather standardized (PEP 621) project metadata. Customize the template herebelow:
+At the root of the project, create a `pyproject.toml` file, to gather standardized (PEP 621) project metadata. Customize the template below:
 
 ```
 [project]
